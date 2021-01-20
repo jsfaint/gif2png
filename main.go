@@ -37,7 +37,7 @@ func getDirAndName(path string) (dir string, name string) {
 }
 
 func getOutputFileName(dir string, name string, index int) string {
-	return filepath.Join(dir, fmt.Sprintf("%s_%d.png", name, index))
+	return filepath.Join(dir, fmt.Sprintf("%s_%d.png", name, index+1))
 }
 
 func main() {
